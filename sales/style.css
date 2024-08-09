@@ -260,14 +260,14 @@ stroke: rgba(197, 115, 244, 0.75);
 
 #blue {
 stroke: rgb(98, 177, 246);
-stroke-dasharray: 205.5, 284; /* length of arc, circumference of circle */
-stroke-dashoffset: -105.75; /* offset of arc from start point (1/2 arc length + 1/4 circumference) */
+stroke-dasharray: 305.5, 584; /* length of arc, circumference of circle */
+stroke-dashoffset: -55.75; /* offset of arc from start point (1/2 arc length + 1/4 circumference) */
 }
 
 #green {
 stroke: rgba(0, 255, 162, 0.75);
 stroke-dasharray: 135.5, 284; /* length of arc, circumference of circle */
-stroke-dashoffset: -37.75; /* offset of  arc from start point (1/2 of arc length) */
+stroke-dashoffset: -17.75; /* offset of  arc from start point (1/2 of arc length) */
 }
 
 /* Key Styles */

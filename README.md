@@ -13,7 +13,8 @@ By Nate Edge
 
 
 ## Screenshots:
-![Ticket Dashboard](/images/ticket-dashboard.png)
+![Sales Dashboard](/images/sales-dashboard.png)
 
+![Ticket Dashboard](/images/ticket-dashboard.png)
 
 ## Attributions: 

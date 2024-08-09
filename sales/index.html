@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <title>Salesforce: Sales</title>
+    <title>Customer Cloud: Sales</title>
 </head>
 <body>
     <div class="container">
@@ -18,8 +18,8 @@
                 </div>
                 <div class="right">
                     <div class="icons">
-                        <h4>Welcome, Squirtle!</h4>
-                        <img class="pic" src="images/squirtle.png">
+                        <h4>Welcome, Bulbasaur!</h4>
+                        <img class="pic" src="/images/bulbasaur.png">
                     </div>
                 </div>
             </div>
@@ -31,25 +31,25 @@
                     <button class="header-button">Customers</button>
                 </div>
                 <div class="Tickets">
-                    <button class="header-button">Tickets</button>
+                    <button class="header-button">Leads</button>
                 </div>
                 <div class="Service Tools">
-                    <button class="header-button">Service Tools</button>
+                    <button class="header-button">Customer Insights</button>
                 </div>
                 <div class="Reports">
-                    <button class="header-button">Reports</button>
+                    <button class="header-button">Sales Resources</button>
                 </div>
             </div>
         </div>
         <div class="lower-container">
             <div class="notifications">
-                <h3>Time Sensitive! New Open Tickets</h3>
+                <h3>Time Sensitive! New Leads!</h3>
                 <button class="notification-button">View Here</button>
             </div>
             <div class="activities">
                 <div class="ticket-activities">
                     <div class="activities-per-rep">
-                        <h3>Ticket Resolution Leader Board</h3>
+                        <h3>Sales Rep Leader Board</h3>
                         <div class="bar-graph-reps">
                             <div class="bar" style="height: 80%;"></div>
                             <div class="bar" style="height: 70%;"></div>
@@ -62,39 +62,34 @@
                         </div>
                     </div>
                     <div class="last-resolved-ticket">
-                        <h3>Recently Resolved Tickets</h3>
+                        <h3>Recent Outbound Emails</h3>
                         <table class="resolved-tickets-table">
                             <tr class="light">
-                                <th>Ticket</th>
                                 <th>Title</th>
-                                <th>Impact</th>
+                                <th>Customer</th>
+                                <th>Company</th>
                             </tr>
                             <tr class="dark">
-                                <th>#1701</th>
-                                <th>Delete Account</th>
-                                <th>Low</th>
+                                <th>"Lunch Next Friday"</th>
+                                <th>Qin Xiaoling</th>
+                                <th>AWS</th>
                             </tr>
                             <tr class="light">
-                                <th>#1635</th>
-                                <th>Online Server Slow</th>
-                                <th>Moderate</th>
+                                <th>"Updated Proposal for Mobile Platform"</th>
+                                <th>Ewa Kuźmińska</th>
+                                <th>Apple</th>
                             </tr>
                             <tr class="dark">
-                                <th>#1703</th>
-                                <th>Mobile Payment Platform Crashes</th>
-                                <th>High</th>
-                            </tr>
-                            <tr class="light">
-                                <th>#1724</th>
-                                <th>Forgot Password</th>
-                                <th>Low</th>
+                                <th>"Meeting Confirmation"</th>
+                                <th>Takei Kameyo</th>
+                                <th>ABC Marketing Agency</th>
                             </tr>
                         </table>
                     </div>
                 </div>
             <div class="tickets">
                 <div class="inbound-tickets-per-week">
-                    <h3>Inbound Tickets Per Week</h3>
+                    <h3>Inbound Leads Per Week</h3>
                     <div class="bar-graph-tickets">
                         <div class="bar" style="height: 60%;"></div>
                         <div class="bar" style="height: 70%;"></div>
@@ -107,57 +102,58 @@
                     </div>
                 </div>
                 <div class="recent-tickets">
-                    <h3>Recently Created Tickets</h3>
+                    <h3>Recently Inbound Leads</h3>
                     <table class="new-tickets-table">
                         <tr class="light">
-                            <th>Ticket</th>
-                            <th>Title</th>
-                            <th>Impact</th>
+                            <th>Lead</th>
+                            <th>Customer</th>
+                            <th>Company</th>
                         </tr>
                         <tr class="dark">
-                            <th>#1735</th>
-                            <th>Forgot Password</th>
-                            <th>Low</th>
+                            <th>#1645</th>
+                            <th>Chen Chonglin</th>
+                            <th>Gaming Depot</th>
                         </tr>
                         <tr class="light">
-                            <th>#1734</th>
-                            <th>Online Server Down</th>
-                            <th>High</th>
+                            <th>#1644</th>
+                            <th>Krzysztof Sarnowski</th>
+                            <th>AWS</th>
                         </tr>
                         <tr class="dark">
-                            <th>#1733</th>
-                            <th>Mobile Payment Platform Slow</th>
-                            <th>Moderate</th>
+                            <th>#1643</th>
+                            <th>Shishido Nori
+                            </th>
+                            <th>Nintendo</th>
                         </tr>
                         <tr class="light">
                             <th>#1732</th>
-                            <th>Forgot Password</th>
-                            <th>Low</th>
+                            <th>Taamir el-Azam</th>
+                            <th>Sony</th>
                         </tr>
                     </table>
                 </div>
             </div>
-                <div class="circle-graph"> Total Tickets Resolved This Week
+                <div class="circle-graph"> Total Sales Activities
                     <div class="graph-container">
                         <svg viewBox='0 0 100 100'>
                             <circle cx='50' cy='50' r='45' id='purple'/>
                             <circle cx='50' cy='50' r='45' id='green'/>
                             <circle cx='50' cy='50' r='45' id='blue'/>
                           </svg>
-                        <div class='graph-num'>81</div>
+                        <div class='graph-num'>192</div>
                     </div>
                     <div class="key">
                         <div class="key-item">
                             <div class="color-circle" id="blue-key"></div>
-                            <div class="Tickets">Low Impact Tickets</div>
+                            <div class="Tickets">Outbound Client Emails</div>
                         </div>
                         <div class="key-item">
                             <div class="color-circle" id="green-key"></div>
-                            <div class="Tickets">Moderate Impact Tickets</div>
+                            <div class="Tickets">Client Meetings</div>
                         </div>
                         <div class="key-item">
                             <div class="color-circle" id="purple-key"></div>
-                            <div class="Tickets">High Impact Tickets</div>
+                            <div class="Tickets">Client Proposals</div>
                         </div>
                     </div>
                 </div>
