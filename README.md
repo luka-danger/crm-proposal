@@ -13,9 +13,7 @@ By Nate Edge
 
 
 ## Screenshots:
-![Ticket Dashboard]()
-
-
+![Ticket Dashboard](./ticket/images/ticket-dashboard.png)
 
 
 ## Attributions: 
