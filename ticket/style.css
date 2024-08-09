@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+* {
+    font-family: "Oxygen";
+}
+
+.header-menu {
+    background-color: white;
+    height: 20vh;
+}
+
+
+.header-top {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    gap: 10px
+}
+
+.search-bar-container {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.search-bar {
+    width: 40vw;
+    height: 30px;
+    align-content: center;
+    text-align: center;
+    border: solid 2px rgb(98, 177, 246);
+    border-radius: 30px;
+    font-size: 20px;
+    background: url(/ticket/images/Magnifying_glass_icon.svg.png) no-repeat 10px center; 
+    background-size: 20px 20px; /* Adjust size of the icon */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+} 
+
+.header-logo {
+    background-image: url(/ticket/images/crm-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: left; 
+    height: 120px;
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    height: 5vh;
+}
+
+.left {
+    display: flex;
+    width: 75vw;
+}
+
+.right {
+    width: 25vw;
+    height: 20vh;
+    margin-top: 30px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.pic {
+    border-radius: 100px;
+    border: 1px black;
+    fill: white;
+    height: 100%;
+    width: 22%;
+}
+
+/* */
+
+.lower-container {
+    background: linear-gradient(rgb(98, 177, 246), rgb(153, 190, 222));
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.notifications {
+    background-color: rgba(250, 251, 252, 0.686);
+    height: 10vh;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.notification-button {
+    border-radius: 30px;
+    width: 10%;
+    height: 30px;
+    font-size: 15px;
+    border: solid 2px rgb(98, 177, 246);
+    background-color: rgb(250, 251, 252);
+}
+
+.notification-button:hover {
+    cursor: pointer;
+    background-color: rgba(250, 251, 252, 0.777);
+}
+
+.notification-button:active {
+    cursor: pointer;
+    background-color: rgba(250, 251, 252, 0.392);
+}
+
+.activities {
+    display: flex;
+    height: 70vh;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.activities-per-rep,
+.last-resolved-ticket,
+.inbound-tickets-per-week,
+.recent-tickets {
+    background-color: rgba(250, 251, 252, 0.686);
+    margin: 10px 10px 20px 10px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+/* */ 
+
+.activities-per-rep,
+.inbound-tickets-per-week {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.last-resolved-ticket,
+.recent-tickets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resolved-tickets-table,
+.new-tickets-table {
+    width: 400px;
+    
+}
+
+.dark {
+    background-color: rgb(206, 225, 244);
+}
+
+.light {
+    background-color: rgb(250, 251, 252);
+}
+
+.bar-graph-reps,
+.bar-graph-tickets {
+    display: flex;
+    justify-content: space-between; /* Evenly distribute the bars */
+    align-items: flex-end; /* Align bars to the bottom */
+    width: 20vw; 
+    height: 40vh;
+    margin: 20px auto; /* Center the graph horizontally */
+    padding: 5px;
+    border: 1px solid rgb(98, 177, 246); /* Optional border */
+    background-color: #f4f4f4; /* Background color of the graph container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+.bar {
+    width: 10%;
+    background-color: rgb(98, 177, 246);
+    border-radius: 5px 5px 0 0; /* Rounded top corners for bars */
+    height: 200px;
+    display: flex;
+    align-items: flex-end; /* Align bars to the bottom of their container */
+    justify-content: center; /* Center bars horizontally within their container */
+    transition: height 0.3s ease; /* Smooth transition for height changes */
+}
+
+/* */ 
+
+.circle-graph {
+    background-color: rgba(250, 251, 252, 0.686);
+    margin: 10px 10px 10px 10px;
+    width: 420px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+}
+
+svg {
+    display: block; /* Ensures the SVG takes up its own space */
+}
+
+
+/* */
+
+.graph-num {
+    position: absolute;
+    font-size: 60px;
+}
+
+circle {
+stroke-width: 4px;
+fill: transparent;
+}
+
+#purple {
+stroke: rgba(197, 115, 244, 0.75);
+
+}
+
+#blue {
+stroke: rgb(98, 177, 246);
+stroke-dasharray: 205.5, 284; /* length of arc, circumference of circle */
+stroke-dashoffset: -105.75; /* offset of arc from start point (1/2 arc length + 1/4 circumference) */
+}
+
+#green {
+stroke: rgba(0, 255, 162, 0.75);
+stroke-dasharray: 135.5, 284; /* length of arc, circumference of circle */
+stroke-dashoffset: -37.75; /* offset of  arc from start point (1/2 of arc length) */
+}
+
+/* Key Styles */
+.key {
+    margin-top: 20px;
+}
+.key-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.color-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#purple-key {
+    background-color: rgba(197, 115, 244, 0.75);
+}
+#green-key {
+    background-color: rgba(0, 255, 162, 0.75);
+}
+#blue-key {
+    background-color: rgb(98, 177, 246);
+}
+
+/* */
+
+@media (max-width: 1082px) {
+    .circle-graph, 
+    .notification-button {
+        display: none;
+    }
+}
+
+@media (max-width: 639px) {
+    .tickets,
+    .circle-graph,
+    .icons,
+    .bar-graph-reps,
+    .bar-graph-tickets {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    .search-bar,
+    .icons,
+    .header-bottom,
+    .notifications,
+    .activities,
+    .tickets,
+    .circle-graph {
+        display: none;
+    }
+}

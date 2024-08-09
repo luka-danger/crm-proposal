@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Salesforce: Sales</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header-menu">
+            <div class="header-top">
+                <div class="left">
+                    <div class="header-logo"></div>
+                    <div class="search-bar-container">
+                        <input type="text" class="search-bar" placeholder="Search">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="icons">
+                        <h4>Welcome, Squirtle!</h4>
+                        <img class="pic" src="images/squirtle.png">
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="Home">Home</div>
+                <div class="Customers">Customers</div>
+                <div class="Leads">Leads</div>
+                <div class="Tasks">Tasks</div>
+                <div class="Reports">Reports</div>
+                <div class="Insights">Insights</div>
+            </div>
+        </div>
+        <div class="lower-container">
+            <div class="notifications">
+                <h3>Time Sensitive! New Open Tickets</h3>
+                <button class="notification-button">View Here</button>
+            </div>
+            <div class="activities">
+                <div class="ticket-activities">
+                    <div class="activities-per-rep">
+                        <h3>Ticket Resolution Leader Board</h3>
+                        <div class="bar-graph-reps">
+                            <div class="bar" style="height: 80%;"></div>
+                            <div class="bar" style="height: 70%;"></div>
+                            <div class="bar" style="height: 80%;"></div>
+                            <div class="bar" style="height: 50%;"></div>
+                            <div class="bar" style="height: 95%;"></div>
+                            <div class="bar" style="height: 40%;"></div>
+                            <div class="bar" style="height: 35%;"></div>
+                            <div class="bar" style="height: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="last-resolved-ticket">
+                        <h3>Recently Resolved Tickets</h3>
+                        <table class="resolved-tickets-table">
+                            <tr class="light">
+                                <th>Ticket</th>
+                                <th>Title</th>
+                                <th>Impact</th>
+                            </tr>
+                            <tr class="dark">
+                                <th>#1701</th>
+                                <th>Delete Account</th>
+                                <th>Low</th>
+                            </tr>
+                            <tr class="light">
+                                <th>#1635</th>
+                                <th>Online Server Slow</th>
+                                <th>Moderate</th>
+                            </tr>
+                            <tr class="dark">
+                                <th>#1703</th>
+                                <th>Mobile Payment Platform Crashes</th>
+                                <th>High</th>
+                            </tr>
+                            <tr class="light">
+                                <th>#1724</th>
+                                <th>Forgot Password</th>
+                                <th>Low</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            <div class="tickets">
+                <div class="inbound-tickets-per-week">
+                    <h3>Inbound Tickets Per Week</h3>
+                    <div class="bar-graph-tickets">
+                        <div class="bar" style="height: 60%;"></div>
+                        <div class="bar" style="height: 70%;"></div>
+                        <div class="bar" style="height: 80%;"></div>
+                        <div class="bar" style="height: 50%;"></div>
+                        <div class="bar" style="height: 90%;"></div>
+                        <div class="bar" style="height: 40%;"></div>
+                        <div class="bar" style="height: 75%;"></div>
+                        <div class="bar" style="height: 85%;"></div>
+                    </div>
+                </div>
+                <div class="recent-tickets">
+                    <h3>Recently Created Tickets</h3>
+                    <table class="new-tickets-table">
+                        <tr class="light">
+                            <th>Ticket</th>
+                            <th>Title</th>
+                            <th>Impact</th>
+                        </tr>
+                        <tr class="dark">
+                            <th>#1735</th>
+                            <th>Forgot Password</th>
+                            <th>Low</th>
+                        </tr>
+                        <tr class="light">
+                            <th>#1734</th>
+                            <th>Online Server Down</th>
+                            <th>High</th>
+                        </tr>
+                        <tr class="dark">
+                            <th>#1733</th>
+                            <th>Mobile Payment Platform Slow</th>
+                            <th>Moderate</th>
+                        </tr>
+                        <tr class="light">
+                            <th>#1732</th>
+                            <th>Forgot Password</th>
+                            <th>Low</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+                <div class="circle-graph"> Total Tickets Resolved This Week
+                    <div class="graph-container">
+                        <svg viewBox='0 0 100 100'>
+                            <circle cx='50' cy='50' r='45' id='purple'/>
+                            <circle cx='50' cy='50' r='45' id='green'/>
+                            <circle cx='50' cy='50' r='45' id='blue'/>
+                          </svg>
+                        <div class='graph-num'>81</div>
+                    </div>
+                    <div class="key">
+                        <div class="key-item">
+                            <div class="color-circle" id="blue-key"></div>
+                            <div class="Tickets">Low Impact Tickets</div>
+                        </div>
+                        <div class="key-item">
+                            <div class="color-circle" id="green-key"></div>
+                            <div class="Tickets">Moderate Impact Tickets</div>
+                        </div>
+                        <div class="key-item">
+                            <div class="color-circle" id="purple-key"></div>
+                            <div class="Tickets">High Impact Tickets</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
