@@ -49,6 +49,23 @@
     margin-left: 10px;
 }
 
+.header-button {
+    border: none;
+    background-color: white;
+    font-family: "Oxygen";
+    font-size: 17px;
+}
+
+.header-button:hover {
+    cursor: pointer;
+    color: rgb(98, 177, 246)
+}
+
+.header-button:active {
+    cursor: pointer;
+    color: rgb(153, 190, 222)
+}
+
 .header-bottom {
     display: flex;
     justify-content: space-evenly;
