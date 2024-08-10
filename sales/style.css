@@ -177,8 +177,11 @@
 
 .resolved-tickets-table,
 .new-tickets-table {
-    width: 400px;
-    
+    width: 387px;
+}
+
+table {
+    border-radius: 20px;
 }
 
 .dark {
